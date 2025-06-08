@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/darker_gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Shape setengah bulat biru -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/top_half_circle" />
+
+    <!-- ruang untuk bottom nav -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp"
+        android:fillViewport="true">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logoSekolah"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:background="@drawable/logo_border"
+            android:scaleType="centerCrop"/>
+
+        <!-- Nama Sekolah -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SD NEGERI 2 MONTONG GAMANG"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KECAMATAN KOPANG"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Grid Menu -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/menuRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- KELAS CORE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KELAS CORE"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/kelasRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"/>
+
+        <!-- SLIDER GAMBAR -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/sliderViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+    <!-- Bottom Navigation Bar -->
+<com.google.android.material.bottomnavigation.BottomNavigationView
+android:id="@+id/bottomNavigationView"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_gravity="bottom"
+android:background="@android:color/white"
+app:menu="@menu/bottom_nav_menu" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>

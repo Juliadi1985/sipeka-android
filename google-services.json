@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1077022651537",
+    "project_id": "sipeka2025",
+    "storage_bucket": "sipeka2025.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077022651537:android:fdb53d05dfa167f7353b30",
+        "android_client_info": {
+          "package_name": "id.aspi.sipeka"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn9azhqjRllswbgCMM7t1uVISW9V7wxBc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
